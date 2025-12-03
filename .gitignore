@@ -1,0 +1,38 @@
+# Firebase config
+src/js/firebase/firebaseConfig.js
+config/firebaseConfig.json
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Node modules
+node_modules/
+package-lock.json
+yarn.lock
+
+# Build
+dist/
+build/
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS
+Thumbs.db
+.DS_Store
+
+# API Keys (NEVER commit)
+**/apiKey*
+**/SECRET*
+**/credentials*

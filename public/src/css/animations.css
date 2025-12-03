@@ -1,0 +1,473 @@
+/* ============================================
+   FESTIVCHAIN - ANIMATIONS & EFFECTS
+   ============================================ */
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes pulse {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.7;
+    }
+}
+
+@keyframes bounce {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes shake {
+
+    0%,
+    100% {
+        transform: translateX(0);
+    }
+
+    25% {
+        transform: translateX(-5px);
+    }
+
+    75% {
+        transform: translateX(5px);
+    }
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes zoomIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* ========== SNOWFALL ANIMATION (December) ========== */
+@keyframes snowfall {
+    from {
+        top: -100%;
+        opacity: 1;
+    }
+
+    to {
+        top: 100vh;
+        opacity: 0.6;
+    }
+}
+
+.snowflake {
+    position: fixed;
+    top: -10%;
+    z-index: 1000;
+    pointer-events: none;
+    color: #FFFFFF;
+    font-size: 1.6em;
+    text-shadow:
+        0 0 10px rgba(100, 150, 255, 0.8),
+        0 0 20px rgba(100, 150, 255, 0.6),
+        0 2px 6px rgba(0, 0, 0, 0.25);
+    filter: drop-shadow(0 0 8px rgba(100, 150, 255, 0.7));
+    /* make snowfall continuous and visible with slight fade */
+    animation: snowfall linear infinite;
+}
+
+/* ========== FLOWER FALL ANIMATION (Onam) ========== */
+@keyframes flowerfall {
+    from {
+        top: -10%;
+        opacity: 1;
+        transform: rotateZ(0deg);
+    }
+
+    to {
+        top: 100vh;
+        opacity: 0;
+        transform: rotateZ(360deg);
+    }
+}
+
+.flower {
+    position: fixed;
+    top: -10%;
+    z-index: 1000;
+    pointer-events: none;
+    font-size: 2em;
+    animation: flowerfall linear infinite;
+}
+
+/* ========== CRACKER ANIMATION (Vishu/Diwali) ========== */
+@keyframes crackerBurst {
+    0% {
+        opacity: 1;
+        transform: translate(0, 0) scale(1);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translate(var(--tx), var(--ty)) scale(0);
+    }
+}
+
+.cracker {
+    position: fixed;
+    z-index: 1000;
+    pointer-events: none;
+    font-size: 1.2em;
+    animation: crackerBurst 1.2s ease-out;
+}
+
+/* ========== SPARKLE ANIMATION (Pongal) ========== */
+@keyframes sparkle {
+
+    0%,
+    100% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+}
+
+.sparkle {
+    position: fixed;
+    z-index: 1000;
+    pointer-events: none;
+    font-size: 1.1em;
+    /* longer sparkle and repeat for visual richness */
+    animation: sparkle 1.6s ease-in-out infinite;
+}
+
+/* ========== RAINBOW ANIMATION (Vishu) ========== */
+@keyframes rainbow {
+    0% {
+        color: #ff0000;
+    }
+
+    16.66% {
+        color: #ff7f00;
+    }
+
+    33.33% {
+        color: #ffff00;
+    }
+
+    50% {
+        color: #00ff00;
+    }
+
+    66.66% {
+        color: #0000ff;
+    }
+
+    83.33% {
+        color: #4b0082;
+    }
+
+    100% {
+        color: #9400d3;
+    }
+}
+
+.rainbow-text {
+    animation: rainbow 2s linear infinite;
+}
+
+/* ========== FLOATING ANIMATION ========== */
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.float {
+    animation: float 3s ease-in-out infinite;
+}
+
+/* ========== GLOW ANIMATION ========== */
+@keyframes glow {
+
+    0%,
+    100% {
+        box-shadow: 0 0 5px rgba(50, 184, 198, 0.5);
+    }
+
+    50% {
+        box-shadow: 0 0 20px rgba(50, 184, 198, 0.8);
+    }
+}
+
+.glow {
+    animation: glow 2s ease-in-out infinite;
+}
+
+/* ========== SLIDE LEFT ========== */
+@keyframes slideLeft {
+    from {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* ========== SHAKE ERROR ========== */
+@keyframes errorShake {
+
+    0%,
+    100% {
+        transform: translateX(0);
+    }
+
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
+        transform: translateX(-5px);
+    }
+
+    20%,
+    40%,
+    60%,
+    80% {
+        transform: translateX(5px);
+    }
+}
+
+/* ========== CONFETTI ANIMATION ========== */
+@keyframes confetti {
+    0% {
+        opacity: 1;
+        transform: translateY(0) rotate(0deg);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(300px) rotate(720deg);
+    }
+}
+
+.confetti {
+    position: fixed;
+    z-index: 1000;
+    pointer-events: none;
+    /* slightly longer confetti and allow repeated animation for persistent feel */
+    animation: confetti 4s ease-out infinite;
+}
+
+/* ========== BOUNCE IN ========== */
+@keyframes bounceIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+
+    50% {
+        opacity: 1;
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.bounce-in {
+    animation: bounceIn 0.6s ease-out;
+}
+
+/* ========== HEARTBEAT ========== */
+@keyframes heartbeat {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    10%,
+    30% {
+        transform: scale(0.9);
+    }
+
+    20%,
+    40%,
+    60%,
+    80% {
+        transform: scale(1.1);
+    }
+
+    50% {
+        transform: scale(1.15);
+    }
+}
+
+.heartbeat {
+    animation: heartbeat 1.3s ease-in-out infinite;
+}
+
+/* ========== FLIP ANIMATION ========== */
+@keyframes flip {
+    from {
+        transform: rotateY(0deg);
+    }
+
+    to {
+        transform: rotateY(360deg);
+    }
+}
+
+.flip {
+    animation: flip 0.6s ease-out;
+}
+
+/* ========== SCALE UP ========== */
+@keyframes scaleUp {
+    from {
+        transform: scale(0);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.scale-up {
+    animation: scaleUp 0.3s ease-out;
+}
+
+/* ========== BLINK ========== */
+@keyframes blink {
+
+    0%,
+    50%,
+    100% {
+        opacity: 1;
+    }
+
+    25%,
+    75% {
+        opacity: 0.5;
+    }
+}
+
+.blink {
+    animation: blink 1s ease-in-out infinite;
+}
+
+/* ========== UTILITY ANIMATION CLASSES ========== */
+.animate-fade-in {
+    animation: fadeIn 0.5s ease-out;
+}
+
+.animate-slide-in-up {
+    animation: slideInUp 0.5s ease-out;
+}
+
+.animate-slide-in-down {
+    animation: slideInDown 0.5s ease-out;
+}
+
+.animate-pulse {
+    animation: pulse 2s ease-in-out infinite;
+}
+
+.animate-bounce {
+    animation: bounce 1s ease-in-out infinite;
+}
+
+.animate-rotate {
+    animation: rotate 2s linear infinite;
+}
+
+.animate-zoom-in {
+    animation: zoomIn 0.4s ease-out;
+}
+
+/* ========== TRANSITION UTILITIES ========== */
+.transition-all {
+    transition: all 0.3s ease;
+}
+
+.transition-transform {
+    transition: transform 0.3s ease;
+}
+
+.transition-colors {
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+.transition-fast {
+    transition: all 0.15s ease;
+}
+
+.transition-slow {
+    transition: all 0.6s ease;
+}

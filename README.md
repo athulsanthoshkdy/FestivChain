@@ -72,7 +72,7 @@ Hosting:
 
 ### 1. Clone Repository
 ```bash
-git clone https://github.com/yourusername/festivchain-firebase.git
+git clone https://github.com/athulsanthoshkdy/festivchain-firebase.git
 cd festivchain-firebase
 ```
 
@@ -200,39 +200,39 @@ Go to **Realtime Database** → **Rules** and replace with:
 
 ## 📁 Project Structure
 
-```
 festivchain-firebase/
 ├── public/
 │   ├── index.html              # Main entry point
 │   ├── manifest.json           # PWA manifest
-│   └── 404.html               # Firebase Hosting 404
-├── src/
-│   ├── css/
-│   │   ├── main.css           # Global styles
-│   │   ├── animations.css     # Animations & effects
-│   │   └── themes.css         # Festival themes
-│   ├── js/
-│   │   ├── firebase/
-│   │   │   ├── firebaseConfig.js      # ⚠️ Firebase config (keep secret!)
-│   │   │   ├── auth.js                # Authentication logic
-│   │   │   ├── database.js            # Database operations
-│   │   │   └── storage.js             # File uploads
-│   │   ├── pages/
-│   │   │   ├── auth.js                # Login/Signup
-│   │   │   ├── customerHome.js        # Customer dashboard
-│   │   │   ├── vendorDashboard.js     # Vendor dashboard
-│   │   │   ├── cart.js                # Cart management
-│   │   │   ├── orders.js              # Order tracking
-│   │   │   └── products.js            # Product browsing
-│   │   ├── themes/
-│   │   │   ├── themeManager.js        # Theme switching
-│   │   │   ├── onam.js                # Onam theme effects
-│   │   │   ├── diwali.js              # Diwali theme effects
-│   │   │   ├── christmas.js           # Christmas theme effects
-│   │   │   ├── pongal.js              # Pongal theme effects
-│   │   │   └── vishu.js               # Vishu theme effects
-│   │   ├── utils.js                   # Utility functions
-│   │   └── app.js                     # Main application logic
+│   ├── 404.html               # Firebase Hosting 404
+│   └── src/
+│       ├── css/
+│       │   ├── main.css           # Global styles
+│       │   ├── landing.css        # Landing page styles
+│       │   ├── animations.css     # Animations & effects
+│       │   └── themes.css         # Festival themes
+│       ├── js/
+│           ├── firebase/
+│           │   ├── firebaseConfig.js      # ⚠️ Firebase config (keep secret!)
+│           │   ├── auth.js                # Authentication logic
+│           │   ├── database.js            # Database operations
+│           │   └── storage.js             # File uploads
+│           ├── pages/
+│           │   ├── auth.js                # Login/Signup
+│           │   ├── customerHome.js        # Customer dashboard
+│           │   ├── vendorDashboard.js     # Vendor dashboard
+│           │   ├── cart.js                # Cart management
+│           │   ├── orders.js              # Order tracking
+│           │   └── products.js            # Product browsing
+│           ├── themes/
+│           │   ├── themeManager.js        # Theme switching
+│           │   ├── onam.js                # Onam theme effects
+│           │   ├── diwali.js              # Diwali theme effects
+│           │   ├── christmas.js           # Christmas theme effects
+│           │   ├── pongal.js              # Pongal theme effects
+│           │   └── vishu.js               # Vishu theme effects
+│           ├── utils.js                   # Utility functions
+│           └── app.js                     # Main application logic
 ├── config/
 │   ├── firebase-sample-data.json      # Sample database data
 │   └── firebaseConfig.example.js      # Config template
@@ -493,4 +493,4 @@ MIT License - see LICENSE file for details
 
 ---
 
-**Made with 🎉 by FestivChain Team**
+**Made with 🎉 by FestivChain Team & [athulsanthoshkdy](https://github.com/athulsanthoshkdy)**

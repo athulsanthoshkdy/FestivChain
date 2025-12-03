@@ -1,0 +1,111 @@
+{
+  "products": {
+    "flowers": {
+      "1": {
+        "id": "1",
+        "name": "Premium Red Roses",
+        "category": "Flowers",
+        "marketPrice": 300,
+        "predictedPrice": 240,
+        "description": "Fresh garden roses",
+        "rating": 4.8,
+        "reviews": 124,
+        "image": "\ud83c\udf39"
+      },
+      "2": {
+        "id": "2",
+        "name": "White Jasmine",
+        "category": "Flowers",
+        "marketPrice": 200,
+        "predictedPrice": 160,
+        "description": "Fragrant jasmine buds",
+        "rating": 4.9,
+        "reviews": 87,
+        "image": "\ud83c\udf3f"
+      }
+    },
+    "fruits": {
+      "1": {
+        "id": "1",
+        "name": "Washington Apples",
+        "category": "Fruits",
+        "marketPrice": 140,
+        "predictedPrice": 110,
+        "description": "Sweet and crispy",
+        "rating": 4.7,
+        "reviews": 156,
+        "image": "\ud83c\udf4e"
+      },
+      "2": {
+        "id": "2",
+        "name": "Fresh Mangoes",
+        "category": "Fruits",
+        "marketPrice": 150,
+        "predictedPrice": 120,
+        "description": "Ripe and sweet",
+        "rating": 4.6,
+        "reviews": 98,
+        "image": "\ud83e\udd6d"
+      }
+    },
+    "sweets": {
+      "1": {
+        "id": "1",
+        "name": "Traditional Laddus",
+        "category": "Sweets",
+        "marketPrice": 500,
+        "predictedPrice": 400,
+        "description": "Homemade traditional sweets",
+        "rating": 4.9,
+        "reviews": 234,
+        "image": "\ud83c\udf6a"
+      },
+      "2": {
+        "id": "2",
+        "name": "Coconut Barfi",
+        "category": "Sweets",
+        "marketPrice": 520,
+        "predictedPrice": 415,
+        "description": "Rich and delicious",
+        "rating": 4.8,
+        "reviews": 167,
+        "image": "\ud83c\udf6e"
+      }
+    }
+  },
+  "vendors": {
+    "vendor1": {
+      "id": "vendor1",
+      "name": "Fresh Harvest Market",
+      "city": "Kochi",
+      "area": "Fort Kochi",
+      "distance": "2.3 km",
+      "rating": 4.8,
+      "reviews": 342,
+      "availability": "Available",
+      "phone": "9876543210",
+      "products": [
+        "flowers/1",
+        "flowers/2"
+      ]
+    },
+    "vendor2": {
+      "id": "vendor2",
+      "name": "Premium Fruits Store",
+      "city": "Kochi",
+      "area": "Vyttila",
+      "distance": "1.8 km",
+      "rating": 4.6,
+      "reviews": 298,
+      "availability": "Available",
+      "phone": "9876543211",
+      "products": [
+        "fruits/1",
+        "fruits/2"
+      ]
+    }
+  },
+  "reviews": {},
+  "prebooks": {},
+  "pools": {}
+}

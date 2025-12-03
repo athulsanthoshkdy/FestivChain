@@ -1,0 +1,497 @@
+/* ========== LANDING PAGE STYLES ========== */
+
+/* Navbar */
+.landing-navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 999999;
+    height: 60px;
+    isolation: isolate;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+    pointer-events: none;
+    /* Let clicks pass through empty space */
+}
+
+
+.landing-navbar>*,
+.nav-auth-buttons>* {
+    pointer-events: auto;
+    /* Re-enable clicks on children */
+}
+
+.landing-navbar:hover,
+.landing-navbar.scrolled {
+    background: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.landing-navbar:hover .nav-brand,
+.landing-navbar.scrolled .nav-brand,
+.landing-navbar:hover .nav-links a,
+.landing-navbar.scrolled .nav-links a {
+    color: var(--color-text);
+}
+
+.nav-brand {
+    font-size: 1.5em;
+    font-weight: 800;
+    color: white;
+    cursor: pointer;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    pointer-events: auto;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: var(--color-primary);
+}
+
+.nav-auth-buttons {
+    display: flex;
+    gap: 15px;
+    pointer-events: auto;
+}
+
+.btn-nav {
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+    border: none;
+    font-size: 0.9em;
+}
+
+.btn-nav-customer {
+    background: var(--color-primary);
+    color: white;
+}
+
+.btn-nav-customer:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(50, 184, 198, 0.3);
+}
+
+.btn-nav-vendor {
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+}
+
+.landing-navbar:hover .btn-nav-vendor,
+.landing-navbar.scrolled .btn-nav-vendor {
+    border-color: var(--color-primary);
+    color: var(--color-primary);
+}
+
+.btn-nav-vendor:hover {
+    background: var(--color-primary);
+    border-color: var(--color-primary) !important;
+    color: white !important;
+    transform: translateY(-2px);
+}
+
+/* Common Hero Styles */
+.hero-content {
+    max-width: 800px;
+    z-index: 20;
+    /* Ensure it's above overlays */
+    position: relative;
+    animation: fadeInUp 1s ease-out;
+    padding: 20px;
+}
+
+.hero-title {
+    font-size: 3.5em;
+    font-weight: 800;
+    margin-bottom: 20px;
+    line-height: 1.2;
+    text-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.hero-subtitle {
+    font-size: 1.4em;
+    opacity: 0.9;
+    margin-bottom: 40px;
+    line-height: 1.6;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.btn-hero {
+    padding: 16px 32px;
+    font-size: 1.1em;
+    border-radius: 50px;
+    font-weight: 700;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    border: none;
+}
+
+.btn-hero-primary {
+    background: white;
+    color: var(--color-primary-dark);
+    border: 2px solid white;
+}
+
+.btn-hero-primary:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.3);
+    background: var(--color-surface);
+}
+
+/* Festival Scroll Sections */
+.festival-section {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+
+.festival-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    /* Dark overlay for readability */
+    z-index: 1;
+}
+
+
+/* Specific Festival Backgrounds */
+.festival-diwali {
+    background-image: url('https://senseearth.co.uk/wp-content/uploads/2021/05/diwali-festival.jpeg');
+}
+
+.festival-christmas {
+    background-image: url('https://images.pexels.com/photos/250177/pexels-photo-250177.jpeg?cs=srgb&dl=pexels-est1307-250177.jpg&fm=jpg');
+}
+
+.festival-vishu {
+    background-image: url('https://images.news18.com/ibnlive/uploads/2022/04/vishu-164979003116x9.jpg');
+}
+
+.festival-pongal {
+    background-image: url('https://t4.ftcdn.net/jpg/10/22/68/11/360_F_1022681187_G4HXY9682Tk15JWsmgC1aRKDOpz0QNmN.jpg');
+}
+
+.festival-eid {
+    background-image: url('https://img.pikbest.com/origin/09/10/88/77ZpIkbEsTCp4.jpg!w700wp');
+}
+
+.festival-onam {
+    background-image: url('https://thumbs.dreamstime.com/b/vibrant-floral-decorations-onam-festival-india-celebrating-colorful-traditions-372242131.jpg');
+}
+
+/* Typography Overrides for Festival Sections */
+.festival-section .hero-title {
+    font-size: 4em;
+    text-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    margin-bottom: 10px;
+    background: linear-gradient(to right, #ffffff, #e0f7fa, #32b8c6, #ffffff);
+    background-size: 300% auto;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shine 5s linear infinite;
+}
+
+@keyframes shine {
+    to {
+        background-position: 300% center;
+    }
+}
+
+.festival-section .hero-subtitle {
+    font-size: 1.5em;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    margin-bottom: 30px;
+}
+
+/* Embedded Content Styles */
+.embedded-content,
+.embedded-feature,
+.embedded-mission {
+    margin-top: 80px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    padding: 25px 40px;
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    display: inline-flex;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+    max-width: 90%;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+.embedded-feature {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+    max-width: 400px;
+}
+
+.embedded-mission {
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+    max-width: 600px;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.stat-item-embedded {
+    flex-direction: column;
+    text-align: center;
+}
+
+.stat-item-embedded h3 {
+    font-size: 2.5em;
+    font-weight: 800;
+    color: #fff;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    margin-bottom: 5px;
+}
+
+.stat-item-embedded p {
+    font-size: 0.9em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.feature-icon-small {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.embedded-feature h3 {
+    font-size: 1.5em;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.embedded-feature p {
+    font-size: 1em;
+    line-height: 1.4;
+    opacity: 0.9;
+}
+
+.embedded-mission h3 {
+    font-size: 1.8em;
+    font-weight: 700;
+    color: var(--color-primary);
+}
+
+.embedded-mission p {
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+/* Footer */
+.landing-footer {
+    background: #1a1a1a;
+    color: white;
+    padding: 80px 20px 40px;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 60px;
+    margin-bottom: 60px;
+}
+
+.footer-col h4 {
+    color: var(--color-primary);
+    margin-bottom: 25px;
+    font-size: 1.3em;
+    font-weight: 700;
+}
+
+.footer-col ul {
+    list-style: none;
+}
+
+.footer-col ul li {
+    margin-bottom: 15px;
+}
+
+.footer-col ul li a {
+    color: #ccc;
+    text-decoration: none;
+    transition: color 0.3s;
+    font-size: 1.1em;
+}
+
+.footer-col ul li a:hover {
+    color: white;
+    padding-left: 5px;
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 30px;
+    text-align: center;
+    color: #888;
+    font-size: 1em;
+}
+
+
+
+/* Carousel */
+.carousel-container {
+    width: 100%;
+    overflow: hidden;
+    padding: 20px 0;
+    position: relative;
+    mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+    -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+}
+
+.carousel-track {
+    display: flex;
+    gap: 20px;
+    width: max-content;
+    animation: scroll 30s linear infinite;
+}
+
+.carousel-track:hover {
+    animation-play-state: paused;
+}
+
+.carousel-track .product-card {
+    width: 280px;
+    flex-shrink: 0;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.reveal {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 2.5em;
+    }
+
+    .festival-section .hero-title {
+        font-size: 2.8em;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+    }
+
+    .embedded-content {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .footer-content {
+        text-align: center;
+    }
+
+    /* Mobile Navbar Fixes */
+    .landing-navbar {
+        padding: 10px 15px;
+        flex-direction: row;
+        /* Keep row direction */
+        gap: 10px;
+        background: rgba(255, 255, 255, 0.1);
+        /* Transparent again */
+        backdrop-filter: blur(10px);
+    }
+
+    .nav-brand {
+        font-size: 1.2em;
+        margin-bottom: 0;
+    }
+
+    .nav-links {
+        display: none;
+        /* Hide links on mobile */
+    }
+
+    .nav-auth-buttons {
+        width: auto;
+        gap: 8px;
+    }
+
+    .btn-nav {
+        padding: 6px 12px;
+        font-size: 0.8em;
+    }
+}

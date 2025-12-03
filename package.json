@@ -1,0 +1,28 @@
+{
+  "name": "festivchain-firebase",
+  "version": "1.0.0",
+  "description": "Smart Festive Shopping Platform with Firebase Backend",
+  "main": "index.html",
+  "scripts": {
+    "dev": "python -m http.server 8000",
+    "seed": "node scripts/seed_realtime_db.js",
+    "deploy": "firebase deploy",
+    "deploy:hosting": "firebase deploy --only hosting",
+    "deploy:functions": "firebase deploy --only functions",
+    "emulator": "firebase emulators:start"
+  },
+  "keywords": [
+    "festive",
+    "shopping",
+    "firebase",
+    "real-time",
+    "ecommerce"
+  ],
+  "author": "FestivChain Team",
+  "license": "MIT",
+  "dependencies": {
+    "firebase": "^10.0.0",
+    "firebase-admin": "^11.10.0"
+  },
+  "devDependencies": {}
+}

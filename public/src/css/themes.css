@@ -1,0 +1,200 @@
+/* ============================================
+   FESTIVCHAIN - FESTIVAL THEMES
+   ============================================ */
+
+/* ========== ONAM THEME (August - September) ========== */
+body.theme-onam {
+    --color-primary: #2D8F5F;
+    --color-primary-dark: #1A5A3F;
+    --color-primary-light: #E8F5E9;
+    --color-accent-1: #FFB6D9;
+    --color-accent-2: #FFC300;
+}
+
+body.theme-onam .header {
+    background: linear-gradient(135deg, #2D8F5F 0%, #1A5A3F 100%);
+}
+
+body.theme-onam .category-card {
+    background: linear-gradient(135deg, #E8F5E9 0%, #F1F8F4 100%);
+}
+
+/* ========== DIWALI THEME (October - November) ========== */
+body.theme-diwali {
+    --color-primary: #DC2F1F;
+    --color-primary-dark: #B32315;
+    --color-primary-light: #FFEBEE;
+    --color-accent-1: #FFB300;
+    --color-accent-2: #FFA500;
+}
+
+body.theme-diwali .header {
+    background: linear-gradient(135deg, #DC2F1F 0%, #B32315 100%);
+}
+
+body.theme-diwali .category-card {
+    background: linear-gradient(135deg, #FFEBEE 0%, #FFF3E0 100%);
+}
+
+/* ========== CHRISTMAS THEME (December) ========== */
+body.theme-christmas {
+    --color-primary: #0D7377;
+    --color-primary-dark: #08556C;
+    --color-primary-light: #D6EFF5;
+    --color-accent-1: #C41E3A;
+    --color-accent-2: #FFFFFF;
+}
+
+body.theme-christmas {
+    --color-bg: #F0F8F7;
+}
+
+body.theme-christmas .header {
+    background: linear-gradient(135deg, #0D7377 0%, #08556C 100%);
+}
+
+body.theme-christmas .category-card {
+    background: linear-gradient(135deg, #D6EFF5 0%, #E8F5F0 100%);
+}
+
+/* ========== PONGAL THEME (January) ========== */
+body.theme-pongal {
+    --color-primary: #FF8C00;
+    --color-primary-dark: #E67E00;
+    --color-primary-light: #FFECB3;
+    --color-accent-1: #FFD700;
+    --color-accent-2: #FF6347;
+}
+
+body.theme-pongal .header {
+    background: linear-gradient(135deg, #FF8C00 0%, #E67E00 100%);
+}
+
+body.theme-pongal .category-card {
+    background: linear-gradient(135deg, #FFECB3 0%, #FFF9E6 100%);
+}
+
+/* ========== VISHU THEME (April) ========== */
+body.theme-vishu {
+    --color-primary: #FF00FF;
+    --color-primary-dark: #CC00CC;
+    --color-primary-light: #FFE6FF;
+    --color-accent-1: #00FF00;
+    --color-accent-2: #00FFFF;
+}
+
+body.theme-vishu .header {
+    background: linear-gradient(135deg, #FF00FF 0%, #CC00CC 100%);
+}
+
+body.theme-vishu .category-card {
+    background: linear-gradient(135deg, #FFE6FF 0%, #F0E6FF 100%);
+}
+
+/* ========== THEME BACKGROUNDS ========== */
+
+/* Onam Background */
+body.theme-onam .theme-background {
+    background: linear-gradient(180deg, #E8F5E9 0%, #F1F8F4 100%);
+}
+
+/* Diwali Background */
+body.theme-diwali .theme-background {
+    background: linear-gradient(180deg, #FFEBEE 0%, #FFF3E0 100%);
+}
+
+/* Christmas Background */
+body.theme-christmas .theme-background {
+    background: linear-gradient(180deg, #D6EFF5 0%, #E8F5F0 100%);
+}
+
+/* Pongal Background */
+body.theme-pongal .theme-background {
+    background: linear-gradient(180deg, #FFECB3 0%, #FFF9E6 100%);
+}
+
+/* Vishu Background */
+body.theme-vishu .theme-background {
+    background: linear-gradient(180deg, #FFE6FF 0%, #F0E6FF 100%);
+}
+
+/* ========== THEME-SPECIFIC BUTTON STYLES ========== */
+
+body.theme-onam .btn-primary {
+    background: linear-gradient(135deg, #2D8F5F 0%, #1A5A3F 100%);
+}
+
+body.theme-diwali .btn-primary {
+    background: linear-gradient(135deg, #DC2F1F 0%, #B32315 100%);
+}
+
+body.theme-christmas .btn-primary {
+    background: linear-gradient(135deg, #0D7377 0%, #08556C 100%);
+}
+
+body.theme-pongal .btn-primary {
+    background: linear-gradient(135deg, #FF8C00 0%, #E67E00 100%);
+}
+
+body.theme-vishu .btn-primary {
+    background: linear-gradient(135deg, #FF00FF 0%, #CC00CC 100%);
+}
+
+/* ========== TEXT COLORS BY THEME ========== */
+
+body.theme-vishu .rainbow-text {
+    animation: rainbow 3s linear infinite;
+}
+
+/* ========== BORDER COLORS ========== */
+
+body.theme-onam .card {
+    border-color: #2D8F5F;
+}
+
+body.theme-diwali .card {
+    border-color: #DC2F1F;
+}
+
+body.theme-christmas .card {
+    border-color: #0D7377;
+}
+
+body.theme-pongal .card {
+    border-color: #FF8C00;
+}
+
+body.theme-vishu .card {
+    border-color: #FF00FF;
+}
+
+/* ========== THEME INDICATORS ========== */
+.theme-indicator {
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.85em;
+    font-weight: 600;
+    background: rgba(50, 184, 198, 0.1);
+    color: var(--color-primary);
+    border: 1px solid var(--color-primary);
+}
+
+/* ========== RESPONSIVE THEME ADJUSTMENTS ========== */
+@media (max-width: 768px) {
+    body.theme-onam .header,
+    body.theme-diwali .header,
+    body.theme-christmas .header,
+    body.theme-pongal .header,
+    body.theme-vishu .header {
+        padding: 20px 0;
+    }
+
+    body.theme-onam .header h1,
+    body.theme-diwali .header h1,
+    body.theme-christmas .header h1,
+    body.theme-pongal .header h1,
+    body.theme-vishu .header h1 {
+        font-size: 1.8em;
+    }
+}
